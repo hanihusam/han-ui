@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.build.json",
+  "include": [
+    "packages"
+  ],
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ],
+    "paths": {
+      "@han-ui/core": [
+        "packages/han-ui-core/src"
+      ],
+      "@han-ui/icons": [
+        "packages/han-icons/src"
+      ]
+    }
+  }
+}
