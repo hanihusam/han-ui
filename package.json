@@ -1,29 +1,77 @@
 {
   "name": "han-ui",
-  "version": "0.1.0",
-  "description": "Han Design System",
+  "version": "0.1.1",
+  "description": "@hanihusam's personal design system",
   "main": "N/A",
-  "repository": "https://github.com/kata-ai/wicara.git",
+  "repository": "https://github.com/hanihusam/han-ui.git",
   "author": "Han <hani.husam@gmail.com>",
+  "private": true,
   "contributors": [
     {
       "name": "Hani Husamuddin",
       "email": "hani.husam@gmail.com"
     }
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
-  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-feather": "^2.0.9",
+    "tailwindcss": "^2.2.19"
+  },
   "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "@types/node": "^16.3.0",
-    "@types/react": "^17.0.14",
-    "@types/react-dom": "^17.0.9",
-    "lerna": "^4.0.0",
-    "typescript": "^4.3.5"
+    "@babel/core": "^7.16.0",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@storybook/addon-essentials": "6.3.12",
+    "@storybook/addon-links": "6.3.12",
+    "@storybook/react": "6.3.12",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.2",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@types/tailwindcss": "^2.2.2",
+    "babel-loader": "^8.2.3",
+    "caniuse-lite": "^1.0.30001272",
+    "eslint": "^7.19.0",
+    "eslint-config-blvd": "^1.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "jest-environment-jsdom": "^27.3.1",
+    "lerna": "^3.22.1",
+    "lint-staged": "^11.2.6",
+    "microbundle": "^0.13.0",
+    "prettier": "^2.4.1",
+    "react-is": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "build-storybook": "build-storybook",
+    "clean": "lerna run clean",
+    "lint": "lerna run lint",
+    "prepublish": "yarn clean && yarn build",
+    "storybook": "start-storybook -p 6006",
+    "test": "lerna run test",
+    "test:coverage": "lerna run test:coverage",
+    "validate": "lerna run validate"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,scss,md,html,json}": [
+      "prettier --write"
+    ]
   }
 }
