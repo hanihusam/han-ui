@@ -1,10 +1,7 @@
 {
-  "extends": "./tsconfig.project.json",
-  "include": ["packages"],
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"],
       "@hanihusam/han-core": ["./packages/han-core/src"],
       "@hanihusam/han-react": ["./packages/han-react/src"],
       "@hanihusam/tailwind-preset-han": ["./packages/tailwind-preset-han/src"]

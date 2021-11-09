@@ -67,7 +67,8 @@
     "storybook": "start-storybook -p 6006",
     "test": "lerna run test",
     "test:coverage": "lerna run test:coverage",
-    "validate": "lerna run validate"
+    "validate": "lerna run validate",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,css,scss,md,html,json}": [
