@@ -1,23 +1,19 @@
 {
-  "include": ["packages"],
   "compilerOptions": {
-    "allowJs": false,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "declaration": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
+    "target": "es5",
     "module": "esnext",
     "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "lib": ["esnext", "dom"],
+    "importHelpers": true,
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
-    "skipLibCheck": true,
     "strict": true,
-    "typeRoots": ["./node_modules/@types", "./@types"]
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true
   }
 }
