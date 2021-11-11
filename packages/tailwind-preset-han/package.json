@@ -1,6 +1,6 @@
 {
   "name": "tailwind-preset-han",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TailwindCSS preset for the Han UI design system.",
   "source": "src/tailwind-preset-han.js",
   "main": "dist/tailwind-preset-han.js",
