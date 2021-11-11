@@ -1,27 +1,32 @@
 {
   "name": "@hanihusam/han-core",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Core theme variables for the Han UI Design System.",
+  "han:src": "./src/index.ts",
   "source": "src/index.ts",
   "main": "dist/index.js",
-  "module": "dist/index.module.js",
-  "types": "dist/index.d.ts",
+  "module": "dist/icons.esm.js",
+  "typings": "dist/index.d.ts",
   "repository": "https://github.com/hanihusam/han-ui.git",
   "author": "Hani Husamuddin <hani.husam@gmail.com>",
   "license": "MIT",
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "tsdx build --transpileOnly --tsconfig tsconfig.json",
     "clean": "rimraf dist",
-    "dev": "microbundle watch",
-    "lint": "eslint \"src/**/*.{ts,tsx}\"",
-    "prepublishOnly": "yarn clean && yarn build",
-    "type-check": "tsc",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prepublish": "yarn build",
+    "start": "tsdx watch --tsconfig tsconfig.json --verbose",
     "validate": "yarn lint && yarn type-check"
+  },
+  "dependencies": {
+    "polished": "^4.1.3"
   }
 }
