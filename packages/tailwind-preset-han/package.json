@@ -1,0 +1,32 @@
+{
+  "name": "tailwind-preset-han",
+  "version": "0.1.0",
+  "description": "TailwindCSS preset for the Han UI design system.",
+  "source": "src/tailwind-preset-han.js",
+  "main": "dist/tailwind-preset-han.js",
+  "module": "dist/tailwind-preset-han.module.js",
+  "unpkg": "dist/tailwind-preset-han.umd.js",
+  "types": "dist/tailwind-preset-han.d.ts",
+  "repository": "https://github.com/hanihusam/han-ui.git",
+  "author": "Hani Husamuddin <hani.husam@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "microbundle --jsx React.createElement",
+    "clean": "rimraf dist",
+    "lint": "eslint \"src/**/*.js\"",
+    "prepublishOnly": "yarn clean && yarn build",
+    "validate": "yarn lint"
+  },
+  "dependencies": {
+    "@hanihusam/han-core": "^0.1.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
