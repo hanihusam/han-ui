@@ -2,26 +2,14 @@
 # Node.js-Specific Ignores
 # =========================
 
-# Build directories
-lib/
-storybook-static/
+# Build directory
 dist/
-tsc-out/
-.cache/
 
-# Lockfiles
+# npm lockfile (we use yarn)
 /package-lock.json
-/packages/*/package-lock.json
-/packages/*/yarn.lock
-/website/*/package-lock.json
-/website/*/yarn.lock
 
-# tsbuildinfo
-*.tsbuildinfo
-
-# yalc
-.yalc
-yalc.lock
+# lockfiles inside workspaces
+packages/*/yarn.lock
 
 # Logs
 logs
@@ -70,9 +58,6 @@ typings/
 # Optional eslint cache
 .eslintcache
 
-# Optional rollup-plugin-typescript2 cache
-.rpt2_cache
-
 # Optional REPL history
 .node_repl_history
 
@@ -85,8 +70,13 @@ typings/
 # dotenv environment variables file
 .env
 
-# JetBrains settings
-.idea
+# Yarn v2
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 
 # =========================
 # Operating System Files
