@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-preset-han",
+  "name": "@hanihusam/tailwind-preset-han",
   "version": "0.1.2",
   "description": "TailwindCSS preset for the Han UI design system.",
   "source": "src/tailwind-preset-han.js",
