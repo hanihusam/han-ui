@@ -1,6 +1,6 @@
 {
   "name": "@hanihusam/han-react",
-  "version": "0.1.1-alpha.24+4932ba5",
+  "version": "0.1.1-alpha.25+eba974b",
   "description": "han's personal design system.",
   "author": "Hani Husamuddin <hani.husam@gmail.com>",
   "homepage": "https://github.com/hanihusam/hanui-design-system#readme",
@@ -24,5 +24,5 @@
   "bugs": {
     "url": "https://github.com/hanihusam/hanui-design-system/issues"
   },
-  "gitHead": "4932ba5f5f8e79d1099f1f7221760601d68fbf53"
+  "gitHead": "eba974b096a040c2f388e753a32e3673f9b5f1a7"
 }
