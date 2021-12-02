@@ -1,6 +1,6 @@
 {
   "name": "@hanihusam/han-core",
-  "version": "0.1.3-alpha.25+eba974b",
+  "version": "0.1.3-canary.0",
   "description": "Core theme variables for the Han UI Design System.",
   "han:src": "./src/index.ts",
   "source": "src/index.ts",

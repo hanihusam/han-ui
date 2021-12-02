@@ -1,6 +1,6 @@
 {
   "name": "@hanihusam/tailwind-preset-han",
-  "version": "0.1.3-alpha.25+eba974b",
+  "version": "0.1.3-canary.0",
   "description": "TailwindCSS preset for the Han UI design system.",
   "source": "src/tailwind-preset-han.js",
   "main": "dist/tailwind-preset-han.js",
@@ -24,7 +24,7 @@
     "validate": "yarn lint"
   },
   "dependencies": {
-    "@hanihusam/han-core": "^0.1.3-alpha.25+eba974b"
+    "@hanihusam/han-core": "^0.1.3-canary.0"
   },
   "peerDependencies": {
     "tailwindcss": "^2.2.19"
